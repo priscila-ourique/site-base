@@ -31,7 +31,7 @@
     padding: 0;
 }
 
-.footer__social{
+.footer__social {
     display: flex;
 }
 
@@ -45,11 +45,24 @@
     color: var(--text-color);
 }
 
-.footer__social__item{
+.footer__social__item {
     margin-right: 8px;
 }
 
 .footer__phone, .footer__mail {
     display: block;
     margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .footer__block, .footer__block:first-of-type {
+        border: none;
+        padding: 16px;
+        width: 30%;
+    }
 }

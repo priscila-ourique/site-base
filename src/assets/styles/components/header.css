@@ -1,6 +1,6 @@
 /* header top */
 
-.header__top {
+.header__content {
     padding: 16px;
     display: flex;
     align-items: center;
@@ -50,4 +50,39 @@
     color: var(--primary-color);
     padding: 5px;
     text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .header__top {
+        position: relative;
+        z-index: 99;
+    }
+    .header__logo {
+        color: #fff;
+    }
+    .navigation {
+        display: flex;
+        position: relative;
+        top: initial;
+        right: initial;
+        width: initial;
+        height: initial;
+        padding: 0;
+        background: none;
+    }
+    .header__navigation:hover .navigation {
+        display: flex;
+    }
+    .navigation__action {
+        display: none;
+    }
+    .navigation__item {
+        margin: 0 8px;
+    }
+    .navigation__item .link {
+        color: #fff;
+    }
+    .header__banner {
+        margin-top: -64px;
+    }
 }
